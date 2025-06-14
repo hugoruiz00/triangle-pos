@@ -60,6 +60,7 @@ class ExpenseCategoriesDataTable extends DataTable
 
             Column::make('expenses_count')
                 ->title(__('expense::messages.expenses_count'))
+                ->searchable(false)
                 ->addClass('text-center'),
 
             Column::computed('action')
