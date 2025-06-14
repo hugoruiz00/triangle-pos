@@ -60,6 +60,7 @@ class ProductCategoriesDataTable extends DataTable
 
             Column::make('products_count')
                 // ->title(__('product::messages.products_count'))
+                ->searchable(false)
                 ->addClass('text-center'),
 
             Column::computed('action')

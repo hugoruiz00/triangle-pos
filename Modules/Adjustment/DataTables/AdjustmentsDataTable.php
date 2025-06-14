@@ -60,6 +60,7 @@ class AdjustmentsDataTable extends DataTable
 
             Column::make('adjusted_products_count')
                 ->title(__('adjustment::messages.products'))
+                ->searchable(false)
                 ->className('text-center align-middle'),
 
             Column::computed('action')
