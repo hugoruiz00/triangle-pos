@@ -10,9 +10,10 @@
     <!-- Favicon -->
     <link rel="icon" href="{{ asset('images/favicon.png') }}">
     <!-- CoreUI CSS -->
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}" crossorigin="anonymous">
+    {{-- <link rel="stylesheet" href="{{ mix('css/app.css') }}" crossorigin="anonymous"> --}}
+    @vite('resources/sass/app.scss')
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap-icons.css') }}">
 </head>
 <body class="c-app flex-row align-items-center">
 <div class="container">

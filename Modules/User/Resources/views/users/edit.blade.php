@@ -3,8 +3,8 @@
 @section('title', __('user::messages.edit_user'))
 
 @section('third_party_stylesheets')
-    <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet"/>
-    <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css"
+    <link href="{{ asset('css/filepond/filepond.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('css/filepond/filepond-plugin-image-preview.css') }}"
           rel="stylesheet">
 @endsection
 
@@ -82,12 +82,12 @@
 @endsection
 
 @section('third_party_scripts')
-    <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+    <script src="{{ asset('js/filepond/filepond-plugin-image-preview.js') }}"></script>
     <script
-        src="https://unpkg.com/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.js"></script>
+        src="{{ asset('js/filepond/filepond-plugin-file-validate-size.js') }}"></script>
     <script
-        src="https://unpkg.com/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.js"></script>
-    <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+        src="{{ asset('js/filepond/filepond-plugin-file-validate-type.js') }}"></script>
+    <script src="{{ asset('js/filepond/filepond.js') }}"></script>
 @endsection
 
 @push('page_scripts')

@@ -119,7 +119,7 @@
 @endsection
 
 @section('third_party_scripts')
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.0/chart.min.js"
+    <script src="{{ asset('js/chart.min.js') }}"
             integrity="sha512-asxKqQghC1oBShyhiBwA+YgotaSYKxGP1rcSYTDrB0U6DxwlJjU59B67U8+5/++uFjcuVM8Hh5cokLjZlhm3Vg=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 @endsection

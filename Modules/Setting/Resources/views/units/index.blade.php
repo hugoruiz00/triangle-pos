@@ -3,8 +3,8 @@
 @section('title', __('setting::messages.units'))
 
 @section('third_party_stylesheets')
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/select/1.3.3/css/select.dataTables.min.css">
+    <link rel="stylesheet" href="{{ asset('css/datatables/dataTables.bootstrap4.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/datatables/select.dataTables.min.css') }}">
 @endsection
 
 @section('breadcrumb')
@@ -77,8 +77,8 @@
 @endsection
 
 @push('page_scripts')
-    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.24/b-1.7.0/b-html5-1.7.0/b-print-1.7.0/datatables.min.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/select/1.3.3/js/dataTables.select.min.js"></script>
+    <script type="text/javascript" src="{{ asset('js/datatables/datatables-2-5-0.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/datatables/dataTables.select.min.js') }}"></script>
     <script>
         var table = $('#data-table').DataTable({
             dom: "<'row'<'col-md-3'l><'col-md-5 mb-2'B><'col-md-4 justify-content-end'f>>tr<'row'<'col-md-5'i><'col-md-7 mt-2'p>>",
